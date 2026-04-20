@@ -19,7 +19,7 @@ Each weight is associated with a **trainable gate parameter**:
 ## Architecture
 - Custom `PrunableLinear` Layer
 - Fully connected neural network:
-  - Input → 400 → 200 → Output (10 classes)
+- Input → 400 → 200 → Output (10 classes)
 - Activation: ReLU
 
 ---
@@ -61,15 +61,14 @@ Loss = CrossEntropy + λ × SparsityLoss
 
 ## Project Structure
 self-pruning-network/
-│
 ├── model.py
 ├── train.py
 ├── utils.py
 ├── config.py
 ├── requirements.txt
 ├── results/
-│ ├── metrics.csv
-│ └── gate_distribution.png
+ ├── metrics.csv
+ └── gate_distribution.png
 
 
 ---
@@ -88,5 +87,5 @@ Key Learning
 
 This project demonstrates how model efficiency can be integrated into the learning process itself rather than treated as a separate optimization step.
 
-Author
+Author:
 Ansu Sinha
