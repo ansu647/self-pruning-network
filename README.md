@@ -52,24 +52,32 @@ Loss = CrossEntropy + λ × SparsityLoss
 ---
 
 ## Output
+Results Preview
+
+![Gate Distribution](results/gate_distribution.png)
 
 ### Gate Distribution
 - Shows clear separation between important and pruned weights  
 - Large spike near zero indicates successful pruning  
 
 ---
+## Detailed Report
 
+For complete explanation, methodology, and analysis, refer to:
+
+[View Full Report](report.md)
+---
 ## Project Structure
 self-pruning-network/
-├── model.py
-├── train.py
-├── utils.py
-├── config.py
-├── requirements.txt
-├── results/
- ├── metrics.csv
- └── gate_distribution.png
-
+model.py,
+train.py,
+utils.py,
+config.py,
+requirements.txt,
+report.md,
+results/
+metrics.csv,
+gate_distribution.png
 
 ---
 
@@ -78,12 +86,12 @@ self-pruning-network/
 pip3 install -r requirements.txt
 python3 train.py
 ```
-Applications
-Edge AI systems
-UAV / drone-based ML models
-Resource-constrained environments
-Real-time inference systems
-Key Learning
+## Applications
+
+- Edge AI systems  
+- UAV / drone-based ML models  
+- Resource-constrained environments  
+- Real-time inference systems  
 
 This project demonstrates how model efficiency can be integrated into the learning process itself rather than treated as a separate optimization step.
 
