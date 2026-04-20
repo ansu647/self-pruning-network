@@ -1,0 +1,7 @@
+BATCH_SIZE = 128
+EPOCHS = 15
+LR = 0.001
+
+LAMBDAS = [0.0001, 0.001, 0.01]
+
+DEVICE = "cuda"  # or "cpu"
